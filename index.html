@@ -33,7 +33,17 @@ nav a:hover,.social:hover{color:var(--gold)}
 .btn{padding:12px 22px;border-radius:4px;border:1px solid var(--gold);font-size:13px;transition:.2s}
 .primary{background:var(--gold);color:#171512}
 .btn:hover{transform:translateY(-2px)}
-.monogram{height:340px;width:340px;max-width:100%;margin:auto;border:1px solid #c9a96a66;border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#c9a96a16,transparent 65%)}
+.profile-photo{
+width:340px;
+height:340px;
+max-width:100%;
+margin:auto;
+display:block;
+object-fit:cover;
+border-radius:50%;
+border:2px solid var(--gold);
+box-shadow:0 0 30px #c9a96a22;
+}
 .monogram:before,.monogram:after{content:"";position:absolute;border:1px solid #c9a96a33;border-radius:50%;inset:22px}
 .monogram:after{inset:-12px;border-style:dashed;opacity:.5}
 .monogram strong{font-family:Georgia,serif;font-size:82px;color:var(--gold);font-weight:400;letter-spacing:-8px;direction:ltr}
