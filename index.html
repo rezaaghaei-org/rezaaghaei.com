@@ -1,769 +1,872 @@
-
+```html
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta name="google-site-verification" content="XEztQcayb2kLVH9T3OEdkAkleybNDCOCPoVzHar6uTw" />
+
+<!-- Google Search Console: verification -->
+<meta name="google-site-verification" content="XEztQcayb2kLVH9T3OEdkAkleybNDCOCPoVzHar6uTw">
+
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="وب‌سایت شخصی رضا آقایی؛ علاقه‌مند به بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی.">
-<meta name="author" content="Reza Aghaei">
 <meta name="theme-color" content="#10100f">
 
-<title>رضا آقایی | Reza Aghaei</title>
+<!-- SEO -->
+<title>رضا آقایی | Reza Aghaei – وب‌سایت رسمی</title>
+
+<meta name="description" content="وب‌سایت رسمی رضا آقایی (Reza Aghaei). آشنایی با فعالیت‌ها، علایق و مسیر یادگیری او در بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی.">
+
+<meta name="author" content="رضا آقایی">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="googlebot" content="index, follow, max-image-preview:large">
+
+<link rel="canonical" href="https://rezaaghaei-org.github.io/rezaaghaei.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="fa_IR">
+<meta property="og:site_name" content="Reza Aghaei">
+<meta property="og:title" content="رضا آقایی | Reza Aghaei">
+<meta property="og:description" content="وب‌سایت رسمی رضا آقایی؛ بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی.">
+<meta property="og:url" content="https://rezaaghaei-org.github.io/rezaaghaei.com/">
+<meta property="og:image" content="https://rezaaghaei-org.github.io/rezaaghaei.com/3ebddcaa-258f-443b-8eb6-41df7823078d.jpg">
+<meta property="og:image:alt" content="عکس پرتره رضا آقایی">
+<meta property="profile:first_name" content="Reza">
+<meta property="profile:last_name" content="Aghaei">
+<meta property="profile:username" content="rezaaghaei_org">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رضا آقایی | Reza Aghaei">
+<meta name="twitter:description" content="وب‌سایت رسمی رضا آقایی">
+<meta name="twitter:image" content="https://rezaaghaei-org.github.io/rezaaghaei.com/3ebddcaa-258f-443b-8eb6-41df7823078d.jpg">
+<meta name="twitter:image:alt" content="عکس پرتره رضا آقایی">
+
+<!-- Structured Data: Person + ProfilePage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#profile",
+      "url": "https://rezaaghaei-org.github.io/rezaaghaei.com/",
+      "name": "رضا آقایی | Reza Aghaei",
+      "description": "وب‌سایت رسمی رضا آقایی؛ معرفی علایق، فعالیت‌ها و مسیر یادگیری او.",
+      "inLanguage": ["fa-IR", "en"],
+      "mainEntity": {
+        "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#person"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#photo"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#person",
+      "name": "رضا آقایی",
+      "alternateName": [
+        "Reza Aghaei",
+        "رضا آقایی"
+      ],
+      "url": "https://rezaaghaei-org.github.io/rezaaghaei.com/",
+      "image": {
+        "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#photo"
+      },
+      "description": "فعال در بازارهای مالی از سال ۱۴۰۱، علاقه‌مند به فناوری، امنیت سایبری و توسعه فردی.",
+      "sameAs": [
+        "https://www.instagram.com/rezaaghaei_org/"
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://rezaaghaei-org.github.io/rezaaghaei.com/#photo",
+      "url": "https://rezaaghaei-org.github.io/rezaaghaei.com/3ebddcaa-258f-443b-8eb6-41df7823078d.jpg",
+      "contentUrl": "https://rezaaghaei-org.github.io/rezaaghaei.com/3ebddcaa-258f-443b-8eb6-41df7823078d.jpg",
+      "caption": "عکس پرتره رضا آقایی | Reza Aghaei"
+    }
+  ]
+}
+</script>
 
 <style>
-:root{
---bg:#10100f;
---panel:#181817;
---gold:#c9a96a;
---cream:#f1eee7;
---muted:#aaa69d;
---line:#ffffff18;
+:root {
+  --bg: #10100f;
+  --panel: #181817;
+  --gold: #c9a96a;
+  --cream: #f1eee7;
+  --muted: #aaa69d;
+  --line: #ffffff18;
 }
 
-*{
-box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-html{
-scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-margin:0;
-background:var(--bg);
-color:var(--cream);
-font-family:Tahoma,Arial,sans-serif;
-line-height:1.85;
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--cream);
+  font-family: Tahoma, Arial, sans-serif;
+  line-height: 1.85;
 }
 
-a{
-color:inherit;
-text-decoration:none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.wrap{
-width:min(1080px,90%);
-margin:auto;
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 4px;
+}
+
+.wrap {
+  width: min(1080px, 90%);
+  margin: auto;
 }
 
 /* Header */
 
-header{
-position:sticky;
-top:0;
-z-index:5;
-background:#10100fe8;
-backdrop-filter:blur(14px);
-border-bottom:1px solid var(--line);
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #10100fe8;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
 }
 
-.nav{
-min-height:68px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:18px;
+.nav {
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
 }
 
-.brand{
-font-size:18px;
-font-weight:700;
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .5px;
 }
 
-.brand span{
-color:var(--gold);
+.brand span,
+.hero h1 span {
+  color: var(--gold);
 }
 
-nav{
-display:flex;
-gap:22px;
-color:var(--muted);
-font-size:13px;
+nav {
+  display: flex;
+  gap: 22px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 nav a:hover,
-.social:hover{
-color:var(--gold);
+.social:hover {
+  color: var(--gold);
 }
 
-.actions{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.lang{
-border:1px solid var(--line);
-background:transparent;
-color:var(--cream);
-padding:7px 12px;
-border-radius:30px;
-cursor:pointer;
-font-family:inherit;
+.lang {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--cream);
+  padding: 7px 12px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 /* Hero */
 
-.hero{
-min-height:550px;
-display:grid;
-grid-template-columns:1.25fr .75fr;
-align-items:center;
-gap:40px;
-padding:65px 0;
+.hero {
+  min-height: 550px;
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  align-items: center;
+  gap: 40px;
+  padding: 65px 0;
 }
 
-.eyebrow{
-color:var(--gold);
-font-size:12px;
-letter-spacing:2px;
-text-transform:uppercase;
+.eyebrow {
+  color: var(--gold);
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.hero h1{
-font-size:clamp(40px,6vw,68px);
-line-height:1.3;
-margin:12px 0 8px;
+.hero h1 {
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 1.3;
+  margin: 12px 0 8px;
 }
 
-.hero h1 span{
-color:var(--gold);
+.subtitle {
+  font-size: 17px;
+  color: var(--muted);
+  margin: 0 0 18px;
 }
 
-.subtitle{
-font-size:17px;
-color:var(--muted);
-margin:0 0 18px;
+.intro {
+  max-width: 620px;
+  color: #d0ccc3;
+  font-size: 14px;
 }
 
-.intro{
-max-width:620px;
-color:#d0ccc3;
-font-size:14px;
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 24px;
 }
 
-.buttons{
-display:flex;
-gap:10px;
-flex-wrap:wrap;
-margin-top:24px;
+.btn {
+  display: inline-block;
+  padding: 10px 19px;
+  border-radius: 4px;
+  border: 1px solid var(--gold);
+  font-size: 13px;
+  transition: .2s;
 }
 
-.btn{
-display:inline-block;
-padding:10px 19px;
-border-radius:4px;
-border:1px solid var(--gold);
-font-size:13px;
-transition:.2s;
+.primary {
+  background: var(--gold);
+  color: #171512;
 }
 
-.primary{
-background:var(--gold);
-color:#171512;
+.btn:hover {
+  transform: translateY(-2px);
 }
 
-.btn:hover{
-transform:translateY(-2px);
+.hero-art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-art{
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.profile-photo{
-width:280px;
-height:280px;
-max-width:100%;
-display:block;
-margin:auto;
-object-fit:contain;
-border-radius:50%;
-border:2px solid var(--gold);
-background:var(--panel);
-box-shadow:0 0 25px #c9a96a22;
+.profile-photo {
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  background: var(--panel);
+  box-shadow: 0 0 25px #c9a96a22;
 }
 
 /* Sections */
 
-section{
-padding:55px 0;
-border-top:1px solid var(--line);
+section {
+  padding: 55px 0;
+  border-top: 1px solid var(--line);
 }
 
-.section-head{
-margin-bottom:25px;
+.section-head {
+  margin-bottom: 25px;
 }
 
-.section-head small{
-color:var(--gold);
-letter-spacing:2px;
-font-size:11px;
+.section-head small {
+  color: var(--gold);
+  letter-spacing: 2px;
+  font-size: 11px;
 }
 
-.section-head h2{
-font-size:28px;
-margin:5px 0;
+.section-head h2 {
+  font-size: 28px;
+  margin: 5px 0;
 }
 
-.section-head p{
-color:var(--muted);
-margin:0;
-font-size:13px;
+.section-head p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 13px;
 }
 
 /* About */
 
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:30px;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
-.about-grid p{
-color:#d0ccc3;
-font-size:14px;
+.about-grid p {
+  color: #d0ccc3;
+  font-size: 14px;
 }
 
-.facts{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px;
-align-content:start;
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-content: start;
 }
 
-.fact{
-background:var(--panel);
-border:1px solid var(--line);
-padding:13px;
-border-radius:6px;
+.fact {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 13px;
+  border-radius: 6px;
 }
 
-.fact small{
-display:block;
-color:var(--muted);
-font-size:10px;
+.fact small {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
 }
 
-.fact b{
-font-size:13px;
+.fact b {
+  font-size: 13px;
 }
 
 /* Interest cards */
 
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:14px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
 }
 
-.card{
-background:var(--panel);
-border:1px solid var(--line);
-padding:20px;
-border-radius:6px;
-min-height:180px;
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 20px;
+  border-radius: 6px;
+  min-height: 180px;
 }
 
-.num{
-color:var(--gold);
-font:21px Georgia;
+.num {
+  color: var(--gold);
+  font: 21px Georgia;
 }
 
-.card h3{
-margin:10px 0 6px;
-font-size:16px;
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 16px;
 }
 
-.card p{
-color:var(--muted);
-font-size:12px;
-margin:0;
+.card p {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 0;
 }
 
 /* Note */
 
-.note{
-border-right:2px solid var(--gold);
-padding:11px 16px;
-color:var(--muted);
-background:#ffffff08;
-margin-top:18px;
-font-size:12px;
-}
-
-body.english .note{
-border-right:0;
-border-left:2px solid var(--gold);
+.note {
+  border-right: 2px solid var(--gold);
+  padding: 11px 16px;
+  color: var(--muted);
+  background: #ffffff08;
+  margin-top: 18px;
+  font-size: 12px;
 }
 
 /* Contact */
 
-.contact{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-background:var(--panel);
-padding:25px;
-border:1px solid var(--line);
-border-radius:7px;
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: var(--panel);
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
 }
 
-.contact h2{
-margin:0 0 5px;
-font-size:23px;
+.contact h2 {
+  margin: 0 0 5px;
+  font-size: 23px;
 }
 
-.contact p{
-color:var(--muted);
-margin:0;
-font-size:13px;
+.contact p {
+  color: var(--muted);
+  margin: 0;
+  font-size: 13px;
 }
 
-.social{
-color:var(--gold);
-direction:ltr;
+.social {
+  color: var(--gold);
+  direction: ltr;
 }
 
 /* Footer */
 
-footer{
-padding:20px 0;
-color:var(--muted);
-font-size:11px;
-display:flex;
-justify-content:space-between;
-gap:15px;
+footer {
+  padding: 20px 0;
+  color: var(--muted);
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 /* Language */
 
-.en{
-display:none;
+.en {
+  display: none;
 }
 
-body.english{
-font-family:Arial,sans-serif;
-direction:ltr;
+body.english {
+  font-family: Arial, sans-serif;
+  direction: ltr;
 }
 
-body.english .fa{
-display:none;
+body.english .fa {
+  display: none;
 }
 
-body.english .en{
-display:initial;
+body.english .en {
+  display: initial;
 }
 
 body.english .about-grid,
-body.english .contact{
-direction:ltr;
+body.english .contact {
+  direction: ltr;
 }
 
-body.english .hero h1{
-letter-spacing:-2px;
+body.english .note {
+  border-right: 0;
+  border-left: 2px solid var(--gold);
+}
+
+body.english .hero h1 {
+  letter-spacing: -2px;
 }
 
 /* Mobile */
 
-@media(max-width:760px){
+@media(max-width:760px) {
+  .wrap {
+    width: 90%;
+  }
 
-.wrap{
-width:90%;
+  nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 55px 0 45px;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .hero-copy {
+    order: 2;
+  }
+
+  .hero-art {
+    order: 1;
+  }
+
+  .profile-photo {
+    width: 190px;
+    height: 190px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .intro {
+    font-size: 13px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .section-head {
+    margin-bottom: 20px;
+  }
+
+  .section-head h2 {
+    font-size: 24px;
+  }
+
+  .about-grid,
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .about-grid p {
+    font-size: 13px;
+  }
+
+  .facts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .contact {
+    display: block;
+    text-align: center;
+    padding: 22px;
+  }
+
+  .contact .btn {
+    margin-top: 17px;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
 }
 
-nav{
-display:none;
-}
+/* Reduced motion */
 
-.hero{
-grid-template-columns:1fr;
-min-height:auto;
-padding:55px 0 45px;
-text-align:center;
-gap:25px;
-}
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-.hero-copy{
-order:2;
-}
-
-.hero-art{
-order:1;
-}
-
-.profile-photo{
-width:190px;
-height:190px;
-}
-
-.hero h1{
-font-size:43px;
-}
-
-.subtitle{
-font-size:15px;
-}
-
-.intro{
-font-size:13px;
-}
-
-.buttons{
-justify-content:center;
-}
-
-section{
-padding:40px 0;
-}
-
-.section-head{
-margin-bottom:20px;
-}
-
-.section-head h2{
-font-size:24px;
-}
-
-.about-grid,
-.cards{
-grid-template-columns:1fr;
-gap:14px;
-}
-
-.about-grid p{
-font-size:13px;
-}
-
-.facts{
-grid-template-columns:1fr 1fr;
-}
-
-.card{
-min-height:auto;
-padding:18px;
-}
-
-.contact{
-display:block;
-text-align:center;
-padding:22px;
-}
-
-.contact .btn{
-margin-top:17px;
-}
-
-footer{
-display:block;
-text-align:center;
-}
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+  }
 }
 </style>
+
 </head>
 
 <body>
 
 <header>
-<div class="wrap nav">
+  <div class="wrap nav">
 
-<a class="brand" href="#">REZA AGHAEI<span>.</span></a>
+    <a class="brand" href="#top">REZA AGHAEI<span>.</span></a>
 
-<nav class="fa">
-<a href="#about">درباره من</a>
-<a href="#interests">حوزه‌های علاقه</a>
-<a href="#journey">مسیر من</a>
-<a href="#contact">ارتباط</a>
-</nav>
+    <nav class="fa" aria-label="منوی اصلی">
+      <a href="#about">درباره من</a>
+      <a href="#interests">حوزه‌های علاقه</a>
+      <a href="#journey">مسیر من</a>
+      <a href="#contact">ارتباط</a>
+    </nav>
 
-<nav class="en">
-<a href="#about">About</a>
-<a href="#interests">Interests</a>
-<a href="#journey">My Journey</a>
-<a href="#contact">Contact</a>
-</nav>
+    <nav class="en" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#interests">Interests</a>
+      <a href="#journey">My Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<div class="actions">
-<button class="lang" id="langBtn">EN / فارسی</button>
-</div>
+    <button class="lang" id="langBtn" type="button">
+      EN / فارسی
+    </button>
 
-</div>
+  </div>
 </header>
 
-<main>
+<main id="top">
 
 <div class="wrap hero">
 
-<div class="hero-copy">
+  <div class="hero-copy">
 
-<div class="eyebrow fa">یادگیری مداوم · رشد · تجربه</div>
-<div class="eyebrow en">CONTINUOUS LEARNING · GROWTH · EXPERIENCE</div>
+    <div class="eyebrow fa">یادگیری مداوم · رشد · تجربه</div>
+    <div class="eyebrow en">CONTINUOUS LEARNING · GROWTH · EXPERIENCE</div>
 
-<h1 class="fa">رضا <span>آقایی</span></h1>
-<h1 class="en">Reza <span>Aghaei</span></h1>
+    <h1 class="fa">رضا <span>آقایی</span></h1>
+    <h1 class="en">Reza <span>Aghaei</span></h1>
 
-<p class="subtitle fa">کنجکاو، مستقل و در مسیر پیشرفت</p>
-<p class="subtitle en">Curious, independent, always evolving.</p>
+    <p class="subtitle fa">کنجکاو، مستقل و در مسیر پیشرفت</p>
+    <p class="subtitle en">Curious, independent, always evolving.</p>
 
-<p class="intro fa">
-به بازارهای مالی، فناوری و امنیت سایبری و توسعه فردی علاقه‌مندم.
-مسیرم را با یادگیری، تجربه و توسعه مهارت‌ها پیش می‌برم؛
-با این باور که پیشرفت واقعی، نتیجه تلاش پیوسته و شناخت بهتر خود است.
-</p>
+    <p class="intro fa">
+      به بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی علاقه‌مندم.
+      مسیرم را با یادگیری، تجربه و توسعه مهارت‌ها پیش می‌برم؛
+      با این باور که پیشرفت واقعی، نتیجه تلاش پیوسته و شناخت بهتر خود است.
+    </p>
 
-<p class="intro en">
-I am interested in financial markets, technology and cybersecurity,
-and personal development. I approach my journey through learning,
-experience, and skill-building—believing that meaningful progress
-comes from consistent effort and a better understanding of oneself.
-</p>
+    <p class="intro en">
+      I am interested in financial markets, technology, cybersecurity,
+      and personal development. I approach my journey through learning,
+      experience, and skill-building, believing that meaningful progress
+      comes from consistent effort and a better understanding of oneself.
+    </p>
 
-<div class="buttons">
-<a class="btn primary fa" href="#about">بیشتر درباره من</a>
-<a class="btn primary en" href="#about">Discover more</a>
-<a class="btn" href="https://www.instagram.com/rezaaghaei_org/" target="_blank" rel="noopener">Instagram ↗</a>
-</div>
+    <div class="buttons">
+      <a class="btn primary fa" href="#about">بیشتر درباره من</a>
+      <a class="btn primary en" href="#about">Discover more</a>
 
-</div>
+      <a class="btn"
+         href="https://www.instagram.com/rezaaghaei_org/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Instagram ↗
+      </a>
+    </div>
 
-<div class="hero-art">
-<img class="profile-photo"
-src="3ebddcaa-258f-443b-8eb6-41df7823078d.jpg"
-<img class="profile-photo"
-src="3ebddcaa-258f-443b-8eb6-41df7823078d.jpg"
-alt="رضا آقایی (Reza Aghaei) - عکس پرتره"
-title="رضا آقایی | Reza Aghaei">
-</div>
+  </div>
+
+  <div class="hero-art">
+    <img
+      class="profile-photo"
+      src="3ebddcaa-258f-443b-8eb6-41df7823078d.jpg"
+      alt="عکس پرتره رضا آقایی | Reza Aghaei"
+      title="رضا آقایی | Reza Aghaei"
+      width="280"
+      height="280"
+      fetchpriority="high"
+      decoding="async">
+  </div>
 
 </div>
 
 <section id="about">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-head">
-<small class="fa">01 / معرفی</small>
-<small class="en">01 / ABOUT</small>
+    <div class="section-head">
+      <small class="fa">01 / معرفی</small>
+      <small class="en">01 / ABOUT</small>
 
-<h2 class="fa">درباره من</h2>
-<h2 class="en">A little about me</h2>
+      <h2 class="fa">درباره من</h2>
+      <h2 class="en">A little about me</h2>
 
-<p class="fa">نگاهی کوتاه به پیشینه و علایق من</p>
-<p class="en">A brief introduction to my background.</p>
-</div>
+      <p class="fa">نگاهی کوتاه به پیشینه و علایق من</p>
+      <p class="en">A brief introduction to my background.</p>
+    </div>
 
-<div class="about-grid">
+    <div class="about-grid">
 
-<div>
-<p class="fa">
-من رضا آقایی هستم؛ زادهٔ خرم‌آباد در استان لرستان و ساکن کرج.
-به شناخت عمیق‌تر جهان پیرامونم و ساختن نسخه‌ای توانمندتر از خودم اهمیت می‌دهم.
-برای من یادگیری فقط جمع‌آوری اطلاعات نیست؛ مهم این است که دانش را
-به مهارت و تجربه عملی تبدیل کنم.
-</p>
+      <div>
+        <p class="fa">
+          من رضا آقایی هستم؛ زادهٔ خرم‌آباد در استان لرستان و ساکن کرج.
+          به شناخت عمیق‌تر جهان پیرامونم و ساختن نسخه‌ای توانمندتر از خودم
+          اهمیت می‌دهم. برای من یادگیری فقط جمع‌آوری اطلاعات نیست؛
+          مهم این است که دانش را به مهارت و تجربه عملی تبدیل کنم.
+        </p>
 
-<p class="en">
-I am Reza Aghaei, born in Khorramabad, Lorestan, and currently based
-in Karaj, Iran. I value understanding the world around me and becoming
-a more capable version of myself. To me, learning is not just collecting
-information—it is about turning knowledge into practical skills and experience.
-</p>
-</div>
+        <p class="en">
+          I am Reza Aghaei, born in Khorramabad, Lorestan, and currently
+          based in Karaj, Iran. I value understanding the world around me
+          and becoming a more capable version of myself. To me, learning
+          is not just collecting information—it is about turning knowledge
+          into practical skills and experience.
+        </p>
+      </div>
 
-<div class="facts">
+      <div class="facts">
 
-<div class="fact">
-<small class="fa">زادگاه</small>
-<small class="en">PLACE OF BIRTH</small>
-<b class="fa">خرم‌آباد، لرستان</b>
-<b class="en">Khorramabad, Lorestan</b>
-</div>
+        <div class="fact">
+          <small class="fa">زادگاه</small>
+          <small class="en">PLACE OF BIRTH</small>
+          <b class="fa">خرم‌آباد، لرستان</b>
+          <b class="en">Khorramabad, Lorestan</b>
+        </div>
 
-<div class="fact">
-<small class="fa">محل سکونت</small>
-<small class="en">BASED IN</small>
-<b class="fa">کرج، ایران</b>
-<b class="en">Karaj, Iran</b>
-</div>
+        <div class="fact">
+          <small class="fa">محل سکونت</small>
+          <small class="en">BASED IN</small>
+          <b class="fa">کرج، ایران</b>
+          <b class="en">Karaj, Iran</b>
+        </div>
 
-</div>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="interests">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-head">
-<small class="fa">02 / علایق</small>
-<small class="en">02 / AREAS OF INTEREST</small>
+    <div class="section-head">
+      <small class="fa">02 / علایق</small>
+      <small class="en">02 / AREAS OF INTEREST</small>
 
-<h2 class="fa">حوزه‌های علاقه و یادگیری</h2>
-<h2 class="en">Areas of interest</h2>
+      <h2 class="fa">حوزه‌های علاقه و یادگیری</h2>
+      <h2 class="en">Areas of interest</h2>
 
-<p class="fa">سه حوزه‌ای که بخش مهمی از مسیر من را شکل می‌دهند.</p>
-<p class="en">Three areas that shape much of my learning journey.</p>
-</div>
+      <p class="fa">سه حوزه‌ای که بخش مهمی از مسیر من را شکل می‌دهند.</p>
+      <p class="en">Three areas that shape much of my learning journey.</p>
+    </div>
 
-<div class="cards">
+    <div class="cards">
 
-<article class="card">
-<div class="num">01</div>
-<h3 class="fa">بازارهای مالی و معامله‌گری</h3>
-<h3 class="en">Financial Markets & Trading</h3>
+      <article class="card">
+        <div class="num">01</div>
+        <h3 class="fa">بازارهای مالی و معامله‌گری</h3>
+        <h3 class="en">Financial Markets & Trading</h3>
 
-<p class="fa">
-فعال در بازارهای مالی از سال ۱۴۰۱، با تمرکز بر تحلیل بازار،
-معامله‌گری، مدیریت ریسک و یادگیری مستمر در این حوزه.
-</p>
+        <p class="fa">
+          فعال در بازارهای مالی از سال ۱۴۰۱، با تمرکز بر تحلیل بازار،
+          معامله‌گری، مدیریت ریسک و یادگیری مستمر در این حوزه.
+        </p>
 
-<p class="en">
-Active in financial markets since 2022, with a focus on market
-analysis, trading, risk management, and continuous learning.
-</p>
-</article>
+        <p class="en">
+          Active in financial markets since 2022, with a focus on market
+          analysis, trading, risk management, and continuous learning.
+        </p>
+      </article>
 
-<article class="card">
-<div class="num">02</div>
-<h3 class="fa">فناوری و امنیت سایبری</h3>
-<h3 class="en">Technology & Cybersecurity</h3>
+      <article class="card">
+        <div class="num">02</div>
+        <h3 class="fa">فناوری و امنیت سایبری</h3>
+        <h3 class="en">Technology & Cybersecurity</h3>
 
-<p class="fa">
-در حال توسعه دانش و مهارت در زمینه شبکه، فناوری و مبانی امنیت سایبری.
-</p>
+        <p class="fa">
+          در حال توسعه دانش و مهارت در زمینه شبکه، فناوری و مبانی امنیت سایبری.
+        </p>
 
-<p class="en">
-Currently developing knowledge and skills in networking,
-technology, and cybersecurity fundamentals.
-</p>
-</article>
+        <p class="en">
+          Currently developing knowledge and skills in networking,
+          technology, and cybersecurity fundamentals.
+        </p>
+      </article>
 
-<article class="card">
-<div class="num">03</div>
-<h3 class="fa">توسعه فردی</h3>
-<h3 class="en">Personal Development</h3>
+      <article class="card">
+        <div class="num">03</div>
+        <h3 class="fa">توسعه فردی</h3>
+        <h3 class="en">Personal Development</h3>
 
-<p class="fa">
-علاقه‌مند به خودشناسی، تقویت مهارت‌های ارتباطی،
-نظم شخصی و مدیریت بهتر هیجانات.
-</p>
+        <p class="fa">
+          علاقه‌مند به خودشناسی، تقویت مهارت‌های ارتباطی،
+          نظم شخصی و مدیریت بهتر هیجانات.
+        </p>
 
-<p class="en">
-Interested in self-awareness, communication skills,
-personal discipline, and better emotional management.
-</p>
-</article>
+        <p class="en">
+          Interested in self-awareness, communication skills,
+          personal discipline, and better emotional management.
+        </p>
+      </article>
 
-</div>
+    </div>
 
-<div class="note fa">
-این وب‌سایت تصویری از مسیر، تجربه‌ها و حوزه‌های مورد علاقه من ارائه می‌دهد؛
-مسیری پویا که با یادگیری، فعالیت‌ها و دستاوردهای تازه در طول زمان کامل‌تر خواهد شد.
-</div>
+    <div class="note fa">
+      این وب‌سایت تصویری از مسیر، تجربه‌ها و حوزه‌های مورد علاقه من ارائه می‌دهد؛
+      مسیری پویا که با یادگیری، فعالیت‌ها و دستاوردهای تازه در طول زمان کامل‌تر خواهد شد.
+    </div>
 
-<div class="note en">
-This website reflects my journey, experience, and areas of interest—a journey
-that will continue to evolve through learning, new work, and future achievements.
-</div>
+    <div class="note en">
+      This website reflects my journey, experience, and areas of interest—a journey
+      that will continue to evolve through learning, new work, and future achievements.
+    </div>
 
-</div>
+  </div>
 </section>
 
 <section id="journey">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="section-head">
-<small class="fa">03 / مسیر</small>
-<small class="en">03 / THE JOURNEY</small>
+    <div class="section-head">
+      <small class="fa">03 / مسیر</small>
+      <small class="en">03 / THE JOURNEY</small>
 
-<h2 class="fa">همیشه در حال یادگیری</h2>
-<h2 class="en">Always learning</h2>
-</div>
+      <h2 class="fa">همیشه در حال یادگیری</h2>
+      <h2 class="en">Always learning</h2>
+    </div>
 
-<div class="about-grid">
+    <div class="about-grid">
 
-<div>
-<p class="fa">
-من مسیر پیشرفت را یک مقصد ثابت نمی‌بینم.
-تجربه کردن، بررسی اشتباهات، پرسیدن سؤال‌های بهتر و تبدیل آموخته‌ها
-به توانایی‌های واقعی، بخش‌هایی از این مسیر هستند.
-</p>
+      <div>
+        <p class="fa">
+          من مسیر پیشرفت را یک مقصد ثابت نمی‌بینم.
+          تجربه کردن، بررسی اشتباهات، پرسیدن سؤال‌های بهتر و تبدیل آموخته‌ها
+          به توانایی‌های واقعی، بخش‌هایی از این مسیر هستند.
+        </p>
 
-<p class="en">
-I do not see growth as a fixed destination. Experimenting,
-learning from mistakes, asking better questions, and turning
-knowledge into real abilities are all part of the process.
-</p>
-</div>
+        <p class="en">
+          I do not see growth as a fixed destination. Experimenting,
+          learning from mistakes, asking better questions, and turning
+          knowledge into real abilities are all part of the process.
+        </p>
+      </div>
 
-<div>
-<p class="fa">
-هدفم ساختن پایه‌ای محکم از دانش، استقلال فکری و مهارت‌هایی است
-که در زندگی واقعی ارزش ایجاد می‌کنند.
-</p>
+      <div>
+        <p class="fa">
+          هدفم ساختن پایه‌ای محکم از دانش، استقلال فکری و مهارت‌هایی است
+          که در زندگی واقعی ارزش ایجاد می‌کنند.
+        </p>
 
-<p class="en">
-My goal is to build a strong foundation of knowledge,
-independent thinking, and skills that create value in real life.
-</p>
-</div>
+        <p class="en">
+          My goal is to build a strong foundation of knowledge,
+          independent thinking, and skills that create value in real life.
+        </p>
+      </div>
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<div class="wrap">
+  <div class="wrap">
 
-<div class="contact">
+    <div class="contact">
 
-<div>
-<h2 class="fa">در ارتباط باشیم</h2>
-<h2 class="en">Let's connect</h2>
+      <div>
+        <h2 class="fa">در ارتباط باشیم</h2>
+        <h2 class="en">Let's connect</h2>
 
-<p class="fa">
-برای دنبال کردن فعالیت‌ها و مسیر من، از اینستاگرام دیدن کنید.
-</p>
+        <p class="fa">
+          برای دنبال کردن فعالیت‌ها و مسیر من، از صفحه رسمی اینستاگرام دیدن کنید.
+        </p>
 
-<p class="en">
-Follow my updates and journey on Instagram.
-</p>
-</div>
+        <p class="en">
+          Follow my updates and journey on my official Instagram profile.
+        </p>
+      </div>
 
-<a class="btn primary"
-href="https://www.instagram.com/rezaaghaei_org/"
-target="_blank"
-rel="noopener">@Rezaaghaei_org ↗</a>
+      <a class="btn primary"
+         href="https://www.instagram.com/rezaaghaei_org/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="صفحه رسمی اینستاگرام رضا آقایی">
+        @Rezaaghaei_org ↗
+      </a>
 
-</div>
-</div>
+    </div>
+  </div>
 </section>
 
 </main>
 
 <footer class="wrap">
-<span>© <span id="year"></span> Reza Aghaei</span>
-<span class="fa">ساخته‌شده با تمرکز بر سادگی و اصالت</span>
-<span class="en">Built with simplicity and authenticity.</span>
+  <span>© <span id="year"></span> Reza Aghaei</span>
+  <span class="fa">ساخته‌شده با تمرکز بر سادگی و اصالت</span>
+  <span class="en">Built with simplicity and authenticity.</span>
 </footer>
 
 <script>
-const btn=document.getElementById('langBtn');
+const btn = document.getElementById('langBtn');
 
-btn.addEventListener('click',()=>{
-document.body.classList.toggle('english');
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('english');
 
-const en=document.body.classList.contains('english');
+  const english = document.body.classList.contains('english');
 
-document.documentElement.lang=en?'en':'fa';
-document.documentElement.dir=en?'ltr':'rtl';
+  document.documentElement.lang = english ? 'en' : 'fa';
+  document.documentElement.dir = english ? 'ltr' : 'rtl';
 });
 
-document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+```
