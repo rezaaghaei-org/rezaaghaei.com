@@ -8,6 +8,7 @@
 <meta name="description" content="وب‌سایت شخصی رضا آقایی؛ علاقه‌مند به بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی.">
 <meta name="author" content="Reza Aghaei">
 <meta name="theme-color" content="#10100f">
+
 <title>رضا آقایی | Reza Aghaei</title>
 
 <style>
@@ -20,19 +21,33 @@
 --line:#ffffff18;
 }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
 
 body{
 margin:0;
 background:var(--bg);
 color:var(--cream);
 font-family:Tahoma,Arial,sans-serif;
-line-height:1.9;
+line-height:1.85;
 }
 
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1120px,90%);margin:auto}
+a{
+color:inherit;
+text-decoration:none;
+}
+
+.wrap{
+width:min(1080px,90%);
+margin:auto;
+}
+
+/* Header */
 
 header{
 position:sticky;
@@ -44,29 +59,33 @@ border-bottom:1px solid var(--line);
 }
 
 .nav{
-height:76px;
+min-height:68px;
 display:flex;
 align-items:center;
 justify-content:space-between;
-gap:20px;
+gap:18px;
 }
 
 .brand{
 font-size:18px;
 font-weight:700;
-letter-spacing:.3px;
 }
 
-.brand span{color:var(--gold)}
+.brand span{
+color:var(--gold);
+}
 
 nav{
 display:flex;
-gap:25px;
+gap:22px;
 color:var(--muted);
 font-size:13px;
 }
 
-nav a:hover,.social:hover{color:var(--gold)}
+nav a:hover,
+.social:hover{
+color:var(--gold);
+}
 
 .actions{
 display:flex;
@@ -78,18 +97,21 @@ gap:10px;
 border:1px solid var(--line);
 background:transparent;
 color:var(--cream);
-padding:8px 13px;
+padding:7px 12px;
 border-radius:30px;
 cursor:pointer;
+font-family:inherit;
 }
 
+/* Hero */
+
 .hero{
-min-height:650px;
+min-height:550px;
 display:grid;
 grid-template-columns:1.25fr .75fr;
 align-items:center;
-gap:50px;
-padding:90px 0;
+gap:40px;
+padding:65px 0;
 }
 
 .eyebrow{
@@ -100,34 +122,37 @@ text-transform:uppercase;
 }
 
 .hero h1{
-font-size:clamp(42px,7vw,76px);
+font-size:clamp(40px,6vw,68px);
 line-height:1.3;
-margin:15px 0 10px;
+margin:12px 0 8px;
 }
 
-.hero h1 span{color:var(--gold)}
+.hero h1 span{
+color:var(--gold);
+}
 
 .subtitle{
-font-size:19px;
+font-size:17px;
 color:var(--muted);
-margin:0 0 22px;
+margin:0 0 18px;
 }
 
 .intro{
-max-width:650px;
+max-width:620px;
 color:#d0ccc3;
-font-size:15px;
+font-size:14px;
 }
 
 .buttons{
 display:flex;
-gap:12px;
+gap:10px;
 flex-wrap:wrap;
-margin-top:30px;
+margin-top:24px;
 }
 
 .btn{
-padding:12px 22px;
+display:inline-block;
+padding:10px 19px;
 border-radius:4px;
 border:1px solid var(--gold);
 font-size:13px;
@@ -139,147 +164,135 @@ background:var(--gold);
 color:#171512;
 }
 
-.btn:hover{transform:translateY(-2px)}
+.btn:hover{
+transform:translateY(-2px);
+}
 
-/* Profile photo */
+.hero-art{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
 .profile-photo{
 width:280px;
 height:280px;
 max-width:100%;
-margin:auto;
 display:block;
-object-fit:cover;
+margin:auto;
+object-fit:contain;
 border-radius:50%;
 border:2px solid var(--gold);
-box-shadow:0 0 30px #c9a96a22;
+background:var(--panel);
+box-shadow:0 0 25px #c9a96a22;
 }
 
+/* Sections */
+
 section{
-padding:80px 0;
+padding:55px 0;
 border-top:1px solid var(--line);
 }
 
-.section-head{margin-bottom:35px}
+.section-head{
+margin-bottom:25px;
+}
+
 .section-head small{
 color:var(--gold);
 letter-spacing:2px;
+font-size:11px;
 }
 
 .section-head h2{
-font-size:32px;
-margin:6px 0;
+font-size:28px;
+margin:5px 0;
 }
 
 .section-head p{
 color:var(--muted);
 margin:0;
+font-size:13px;
 }
+
+/* About */
 
 .about-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:50px;
+gap:30px;
 }
 
-.about-grid p{color:#d0ccc3}
+.about-grid p{
+color:#d0ccc3;
+font-size:14px;
+}
 
 .facts{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:12px;
+gap:10px;
+align-content:start;
 }
 
 .fact{
 background:var(--panel);
 border:1px solid var(--line);
-padding:18px;
+padding:13px;
 border-radius:6px;
 }
 
 .fact small{
 display:block;
 color:var(--muted);
-font-size:11px;
+font-size:10px;
 }
 
-.fact b{font-size:15px}
+.fact b{
+font-size:13px;
+}
+
+/* Interest cards */
 
 .cards{
 display:grid;
 grid-template-columns:repeat(3,1fr);
-gap:16px;
+gap:14px;
 }
 
 .card{
 background:var(--panel);
 border:1px solid var(--line);
-padding:26px;
+padding:20px;
 border-radius:6px;
-min-height:220px;
+min-height:180px;
 }
 
 .num{
 color:var(--gold);
-font:22px Georgia;
+font:21px Georgia;
 }
 
 .card h3{
-margin:14px 0 8px;
-font-size:18px;
+margin:10px 0 6px;
+font-size:16px;
 }
 
 .card p{
 color:var(--muted);
-font-size:13px;
+font-size:12px;
 margin:0;
 }
 
+/* Note */
+
 .note{
 border-right:2px solid var(--gold);
-padding:15px 20px;
+padding:11px 16px;
 color:var(--muted);
 background:#ffffff08;
-margin-top:25px;
-font-size:13px;
-}
-
-.contact{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:25px;
-background:var(--panel);
-padding:35px;
-border:1px solid var(--line);
-border-radius:7px;
-}
-
-.contact h2{margin:0 0 5px}
-.contact p{color:var(--muted);margin:0}
-.social{color:var(--gold);direction:ltr}
-
-footer{
-padding:25px 0;
-color:var(--muted);
-font-size:11px;
-display:flex;
-justify-content:space-between;
-gap:15px;
-}
-
-.en{display:none}
-
-body.english{
-font-family:Arial,sans-serif;
-direction:ltr;
-}
-
-body.english .fa{display:none}
-body.english .en{display:initial}
-
-body.english .about-grid,
-body.english .contact{
-direction:ltr;
+margin-top:18px;
+font-size:12px;
 }
 
 body.english .note{
@@ -287,47 +300,163 @@ border-right:0;
 border-left:2px solid var(--gold);
 }
 
-body.english .hero h1{letter-spacing:-2px}
+/* Contact */
+
+.contact{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+background:var(--panel);
+padding:25px;
+border:1px solid var(--line);
+border-radius:7px;
+}
+
+.contact h2{
+margin:0 0 5px;
+font-size:23px;
+}
+
+.contact p{
+color:var(--muted);
+margin:0;
+font-size:13px;
+}
+
+.social{
+color:var(--gold);
+direction:ltr;
+}
+
+/* Footer */
+
+footer{
+padding:20px 0;
+color:var(--muted);
+font-size:11px;
+display:flex;
+justify-content:space-between;
+gap:15px;
+}
+
+/* Language */
+
+.en{
+display:none;
+}
+
+body.english{
+font-family:Arial,sans-serif;
+direction:ltr;
+}
+
+body.english .fa{
+display:none;
+}
+
+body.english .en{
+display:initial;
+}
+
+body.english .about-grid,
+body.english .contact{
+direction:ltr;
+}
+
+body.english .hero h1{
+letter-spacing:-2px;
+}
+
+/* Mobile */
 
 @media(max-width:760px){
 
-nav{display:none}
+.wrap{
+width:90%;
+}
+
+nav{
+display:none;
+}
 
 .hero{
 grid-template-columns:1fr;
 min-height:auto;
-padding:75px 0 65px;
+padding:55px 0 45px;
 text-align:center;
-gap:40px;
+gap:25px;
 }
 
-.hero-copy{order:2}
-.hero-art{order:1}
+.hero-copy{
+order:2;
+}
+
+.hero-art{
+order:1;
+}
 
 .profile-photo{
 width:190px;
 height:190px;
 }
 
-.buttons{justify-content:center}
-
-.about-grid,.cards{
-grid-template-columns:1fr;
+.hero h1{
+font-size:43px;
 }
 
-.facts{grid-template-columns:1fr 1fr}
+.subtitle{
+font-size:15px;
+}
+
+.intro{
+font-size:13px;
+}
+
+.buttons{
+justify-content:center;
+}
+
+section{
+padding:40px 0;
+}
+
+.section-head{
+margin-bottom:20px;
+}
+
+.section-head h2{
+font-size:24px;
+}
+
+.about-grid,
+.cards{
+grid-template-columns:1fr;
+gap:14px;
+}
+
+.about-grid p{
+font-size:13px;
+}
+
+.facts{
+grid-template-columns:1fr 1fr;
+}
+
+.card{
+min-height:auto;
+padding:18px;
+}
 
 .contact{
 display:block;
 text-align:center;
+padding:22px;
 }
 
 .contact .btn{
-display:inline-block;
-margin-top:20px;
+margin-top:17px;
 }
-
-section{padding:60px 0}
 
 footer{
 display:block;
@@ -341,6 +470,7 @@ text-align:center;
 
 <header>
 <div class="wrap nav">
+
 <a class="brand" href="#">REZA<span>.</span></a>
 
 <nav class="fa">
@@ -360,6 +490,7 @@ text-align:center;
 <div class="actions">
 <button class="lang" id="langBtn">EN / فارسی</button>
 </div>
+
 </div>
 </header>
 
@@ -551,6 +682,7 @@ that will continue to evolve through learning, new work, and future achievements
 
 <div class="about-grid">
 
+<div>
 <p class="fa">
 من مسیر پیشرفت را یک مقصد ثابت نمی‌بینم.
 تجربه کردن، بررسی اشتباهات، پرسیدن سؤال‌های بهتر و تبدیل آموخته‌ها
@@ -562,7 +694,9 @@ I do not see growth as a fixed destination. Experimenting,
 learning from mistakes, asking better questions, and turning
 knowledge into real abilities are all part of the process.
 </p>
+</div>
 
+<div>
 <p class="fa">
 هدفم ساختن پایه‌ای محکم از دانش، استقلال فکری و مهارت‌هایی است
 که در زندگی واقعی ارزش ایجاد می‌کنند.
@@ -572,6 +706,7 @@ knowledge into real abilities are all part of the process.
 My goal is to build a strong foundation of knowledge,
 independent thinking, and skills that create value in real life.
 </p>
+</div>
 
 </div>
 </div>
@@ -617,7 +752,9 @@ const btn=document.getElementById('langBtn');
 
 btn.addEventListener('click',()=>{
 document.body.classList.toggle('english');
+
 const en=document.body.classList.contains('english');
+
 document.documentElement.lang=en?'en':'fa';
 document.documentElement.dir=en?'ltr':'rtl';
 });
