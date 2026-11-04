@@ -410,9 +410,16 @@
       font-size: 13px;
     }
 
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      direction: ltr;
+    }
+
     .social {
       color: var(--gold);
-      direction: ltr;
+      font-size: 13px;
     }
 
     footer {
@@ -424,21 +431,13 @@
       gap: 15px;
     }
 
-    .en {
-      display: none;
+    [hidden] {
+      display: none !important;
     }
 
     body.english {
       font-family: Arial, sans-serif;
       direction: ltr;
-    }
-
-    body.english .fa {
-      display: none;
-    }
-
-    body.english .en {
-      display: initial;
     }
 
     body.english .about-grid,
@@ -538,8 +537,9 @@
         padding: 22px;
       }
 
-      .contact .btn {
-        margin-top: 17px;
+      .social-links {
+        justify-content: center;
+        margin-top: 18px;
       }
 
       footer {
@@ -578,7 +578,7 @@
       <a href="#contact">ارتباط</a>
     </nav>
 
-    <nav class="en" aria-label="Main navigation">
+    <nav class="en" aria-label="Main navigation" hidden>
       <a href="#about">About</a>
       <a href="#interests">Interests</a>
       <a href="#journey">My Journey</a>
@@ -600,13 +600,13 @@
     <div class="hero-copy">
 
       <div class="eyebrow fa">یادگیری مداوم · رشد · تجربه</div>
-      <div class="eyebrow en">CONTINUOUS LEARNING · GROWTH · EXPERIENCE</div>
+      <div class="eyebrow en" hidden>CONTINUOUS LEARNING · GROWTH · EXPERIENCE</div>
 
       <h1 class="fa">رضا <span>آقایی</span></h1>
-      <h1 class="en">Reza <span>Aghaei</span></h1>
+      <h1 class="en" hidden>Reza <span>Aghaei</span></h1>
 
       <p class="subtitle fa">کنجکاو، مستقل و در مسیر پیشرفت</p>
-      <p class="subtitle en">Curious, independent, always evolving.</p>
+      <p class="subtitle en" hidden>Curious, independent, always evolving.</p>
 
       <p class="intro fa">
         به بازارهای مالی، فناوری، امنیت سایبری و توسعه فردی علاقه‌مندم.
@@ -614,7 +614,7 @@
         با این باور که پیشرفت واقعی، نتیجه تلاش پیوسته و شناخت بهتر خود است.
       </p>
 
-      <p class="intro en">
+      <p class="intro en" hidden>
         I am interested in financial markets, technology, cybersecurity,
         and personal development. I approach my journey through learning,
         experience, and skill-building, believing that meaningful progress
@@ -623,7 +623,7 @@
 
       <div class="buttons">
         <a class="btn primary fa" href="#about">بیشتر درباره من</a>
-        <a class="btn primary en" href="#about">Discover more</a>
+        <a class="btn primary en" href="#about" hidden>Discover more</a>
 
         <a class="btn"
           href="https://www.instagram.com/rezaaghaei_org/"
@@ -654,13 +654,13 @@
 
       <div class="section-head">
         <small class="fa">01 / معرفی</small>
-        <small class="en">01 / ABOUT</small>
+        <small class="en" hidden>01 / ABOUT</small>
 
         <h2 class="fa">درباره من</h2>
-        <h2 class="en">A little about me</h2>
+        <h2 class="en" hidden>A little about me</h2>
 
         <p class="fa">نگاهی کوتاه به پیشینه و علایق من</p>
-        <p class="en">A brief introduction to my background.</p>
+        <p class="en" hidden>A brief introduction to my background.</p>
       </div>
 
       <div class="about-grid">
@@ -673,7 +673,7 @@
             مهم این است که دانش را به مهارت و تجربه عملی تبدیل کنم.
           </p>
 
-          <p class="en">
+          <p class="en" hidden>
             I am Reza Aghaei, born in Khorramabad, Lorestan, and currently
             based in Karaj, Iran. I value understanding the world around me
             and becoming a more capable version of myself. To me, learning
@@ -686,16 +686,16 @@
 
           <div class="fact">
             <small class="fa">زادگاه</small>
-            <small class="en">PLACE OF BIRTH</small>
+            <small class="en" hidden>PLACE OF BIRTH</small>
             <b class="fa">خرم‌آباد، لرستان</b>
-            <b class="en">Khorramabad, Lorestan</b>
+            <b class="en" hidden>Khorramabad, Lorestan</b>
           </div>
 
           <div class="fact">
             <small class="fa">محل سکونت</small>
-            <small class="en">BASED IN</small>
+            <small class="en" hidden>BASED IN</small>
             <b class="fa">کرج، ایران</b>
-            <b class="en">Karaj, Iran</b>
+            <b class="en" hidden>Karaj, Iran</b>
           </div>
 
         </div>
@@ -708,13 +708,203 @@
 
       <div class="section-head">
         <small class="fa">02 / علایق</small>
-        <small class="en">02 / AREAS OF INTEREST</small>
+        <small class="en" hidden>02 / AREAS OF INTEREST</small>
 
         <h2 class="fa">حوزه‌های علاقه و یادگیری</h2>
-        <h2 class="en">Areas of interest</h2>
+        <h2 class="en" hidden>Areas of interest</h2>
 
         <p class="fa">سه حوزه‌ای که بخش مهمی از مسیر من را شکل می‌دهند.</p>
-        <p class="en">Three areas that shape much of my learning journey.</p>
+        <p class="en" hidden>Three areas that shape much of my learning journey.</p>
       </div>
 
-      <div
+      <div class="cards">
+
+        <article class="card">
+          <div class="num">01</div>
+          <h3 class="fa">بازارهای مالی</h3>
+          <h3 class="en" hidden>Financial Markets</h3>
+          <p class="fa">
+            علاقه‌مند به تحلیل بازار، معامله‌گری، مدیریت ریسک
+            و شناخت بهتر رفتار بازارهای مالی هستم.
+          </p>
+          <p class="en" hidden>
+            Interested in market analysis, trading, risk management,
+            and understanding how financial markets behave.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="num">02</div>
+          <h3 class="fa">فناوری و امنیت سایبری</h3>
+          <h3 class="en" hidden>Technology & Cybersecurity</h3>
+          <p class="fa">
+            به دنیای فناوری، شبکه، سیستم‌ها و یادگیری اصول امنیت
+            سایبری علاقه دارم.
+          </p>
+          <p class="en" hidden>
+            Interested in technology, networking, computer systems,
+            and learning the fundamentals of cybersecurity.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="num">03</div>
+          <h3 class="fa">توسعه فردی</h3>
+          <h3 class="en" hidden>Personal Development</h3>
+          <p class="fa">
+            رشد شخصیتی، افزایش آگاهی، تقویت مهارت‌ها و تبدیل
+            تجربه‌ها به فرصت یادگیری برایم اهمیت دارد.
+          </p>
+          <p class="en" hidden>
+            Focused on self-awareness, personal growth, skill development,
+            and learning from everyday experiences.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <div class="wrap">
+
+      <div class="section-head">
+        <small class="fa">03 / مسیر من</small>
+        <small class="en" hidden>03 / MY JOURNEY</small>
+
+        <h2 class="fa">یادگیری و تجربه</h2>
+        <h2 class="en" hidden>Learning and experience</h2>
+
+        <p class="fa">نگاهی به مسیر فعالیت‌ها و علایق من</p>
+        <p class="en" hidden>A look at my interests and ongoing journey.</p>
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+          <h3 class="fa">بازارهای مالی از سال ۱۴۰۱</h3>
+          <h3 class="en" hidden>Financial Markets Since 2022</h3>
+
+          <p class="fa">
+            از سال ۱۴۰۱ در بازارهای مالی فعالیت دارم و تمرکزم بر
+            تحلیل بازار، معامله‌گری، مدیریت ریسک و یادگیری مستمر
+            در این حوزه است.
+          </p>
+
+          <p class="en" hidden>
+            I have been active in financial markets since 2022,
+            focusing on market analysis, trading, risk management,
+            and continuous learning in this field.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="fa">نگاه رو به آینده</h3>
+          <h3 class="en" hidden>Looking Ahead</h3>
+
+          <p class="fa">
+            مسیر یادگیری من محدود به یک حوزه نیست. تلاش می‌کنم
+            دانش و مهارت‌هایم را در فناوری، امنیت سایبری و زمینه‌های
+            مختلف توسعه فردی گسترش دهم.
+          </p>
+
+          <p class="en" hidden>
+            My learning journey is not limited to one field.
+            I aim to expand my knowledge and skills in technology,
+            cybersecurity, and different areas of personal development.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="note fa">
+        این وب‌سایت برای معرفی شخصی، علایق و مسیر یادگیری من ایجاد شده است.
+      </div>
+
+      <div class="note en" hidden>
+        This website is a personal introduction to my interests and learning journey.
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+
+      <div class="contact">
+
+        <div>
+          <h2 class="fa">راه‌های ارتباطی</h2>
+          <h2 class="en" hidden>Get in touch</h2>
+
+          <p class="fa">
+            برای آشنایی بیشتر، می‌توانید از طریق صفحات اجتماعی من اقدام کنید.
+          </p>
+
+          <p class="en" hidden>
+            You can find and connect with me through my social profiles.
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a class="social"
+             href="https://www.instagram.com/rezaaghaei_org/"
+             target="_blank"
+             rel="noopener noreferrer">Instagram ↗</a>
+
+          <a class="social"
+             href="https://github.com/rezaaghaei-org"
+             target="_blank"
+             rel="noopener noreferrer">GitHub ↗</a>
+
+          <a class="social"
+             href="https://www.linkedin.com/in/reza-aghaei-b360ba449/"
+             target="_blank"
+             rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span class="fa">© رضا آقایی — تمامی حقوق محفوظ است.</span>
+  <span class="en" hidden>© Reza Aghaei — All rights reserved.</span>
+
+  <span class="fa">وب‌سایت رسمی</span>
+  <span class="en" hidden>Official Website</span>
+</footer>
+
+<script>
+  const langBtn = document.getElementById("langBtn");
+
+  function setLanguage(english) {
+    document.body.classList.toggle("english", english);
+
+    document.documentElement.lang = english ? "en" : "fa";
+    document.documentElement.dir = english ? "ltr" : "rtl";
+
+    document.querySelectorAll(".fa").forEach(element => {
+      element.hidden = english;
+    });
+
+    document.querySelectorAll(".en").forEach(element => {
+      element.hidden = !english;
+    });
+
+    langBtn.setAttribute("aria-pressed", String(english));
+    langBtn.textContent = english ? "فارسی / EN" : "EN / فارسی";
+  }
+
+  langBtn.addEventListener("click", () => {
+    const isEnglish = !document.body.classList.contains("english");
+    setLanguage(isEnglish);
+  });
+
+  setLanguage(false);
+</script>
+
+</body>
+</html>
